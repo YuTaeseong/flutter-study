@@ -21,10 +21,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My App',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-        accentColor: Colors.amber,
-        fontFamily: "Quicksand",
-      ),
+          primarySwatch: Colors.purple,
+          accentColor: Colors.amber,
+          fontFamily: "Quicksand",
+          textTheme: ThemeData.light().textTheme.copyWith(
+                button: TextStyle(color: Colors.white),
+              )),
       home: MyHomePage(),
     );
   }
