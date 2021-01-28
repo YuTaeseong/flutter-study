@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import '../models/transactioon.dart';
 import 'package:intl/intl.dart';
@@ -12,8 +14,14 @@ class TransactionItem extends StatelessWidget {
   final Transaction transactions;
   final Function deleteTx;
 
+  void _test() {
+    var test = Random();
+    print("${test.nextInt(100)}");
+  }
+
   @override
   Widget build(BuildContext context) {
+    _test();
     return Card(
       elevation: 5,
       margin: EdgeInsets.symmetric(
